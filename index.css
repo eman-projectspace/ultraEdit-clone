@@ -55,10 +55,8 @@ li {
 }
 
 section {
-  height: 350px;
-  width: 80%;
-  margin: auto;
-  margin-top: 50px;
+  width: 90%;
+  margin: 50px auto;
   text-align: center;
 }
 
@@ -89,14 +87,11 @@ section {
 
 /*  */
 .sec2 {
-  width: 80%;
-  margin: auto;
-  margin-left: 100px;
-  margin-top: 90px;
+  width: 90%;
+  margin: 50px auto;
   display: flex;
-  justify-content: flex-start;
-  gap: 15px;
-
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 #text3 {
@@ -117,10 +112,9 @@ section {
 
 .grid {
   height: 950px;
-  width: 75%;
+  width: 90%;
+  margin: 50px auto;
   margin-top: 50px;
-  margin-left: 150px;
-  margin-right: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -202,6 +196,9 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 90%;
+    height: auto;
+    margin: 50px auto;
   }
 }
 
@@ -210,9 +207,14 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin-left: 50px;
-    margin-top: 100px;
 
+    /* width: 90%;
+    margin: auto;
+    margin-left: 130px;
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    gap: 15px; */
 
   }
 
@@ -220,7 +222,10 @@ a {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-
+    width: 90%;
+    height: auto;
+    margin: 50px auto;
+    margin-top: 500px;
   }
 
   section {
@@ -231,4 +236,180 @@ a {
     margin-right: 20px;
   }
 
+}
+
+/* Below */
+.Details {
+  width: 100%;
+  background-color: #222;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  /* Make it vertical */
+  align-items: center;
+  padding: 50px 0;
+  gap: 30px;
+}
+
+.details-sec1 {
+  display: flex;
+  justify-content: space-around;
+  column-gap: 10px;
+  width: 1000px;
+}
+
+.details-item {
+  height: auto;
+  width: 300px;
+}
+
+.detail-left {
+  margin-top: 50px;
+  width: 400px;
+}
+
+.detail-right {
+  height: 270px;
+  width: 350px;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+input {
+  height: 50px;
+  width: 280px;
+  margin-left: 40px;
+  margin-top: 5px;
+  border: 1px solid rgb(197, 197, 197);
+}
+
+.signup-btn {
+  height: 50px;
+  width: 280px;
+  margin-left: 40px;
+  background-color: #4daaf2;
+  box-shadow: 0px 0px 0px 5px #4daaf2;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.detail-below {
+  width: 1000px;
+  padding: 20px;
+  border-radius: 10px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .details-sec1 {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    gap: 20px;
+  }
+
+  .detail-left,
+  .details-item,
+  .detail-right {
+    width: 100% !important;
+    margin: 0;
+  }
+
+  .detail-right {
+    padding: 20px;
+  }
+
+  input,
+  .signup-btn {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .detail-below {
+    width: 90%;
+    font-size: 14px;
+    padding: 15px;
+  }
+
+  .detail-left h2 {
+    text-align: center;
+  }
+
+  .detail-left p {
+    text-align: center;
+  }
+}
+
+.grid2 {
+  height: auto;
+  width: 90%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-row: 1fr;
+  gap: 10px;
+
+}
+
+
+#input,
+#button {
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  margin-left: 0px;
+  margin-top: 10px;
+  padding: 5px;
+
+}
+
+#input {
+  border: 1px solid grey;
+}
+
+#button {
+  width: 215px;
+  background-color: #00b6d1;
+  color: white;
+  border: none;
+  font-size: 16px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+@media(max-width: 768px) {
+  .grid2 {
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+}
+
+.last {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.last-item {
+  display: flex;
+  gap: 15px;
+  cursor: pointer;
+}
+
+footer p {
+  margin-bottom: 50px;
+  text-align: center;
 }
