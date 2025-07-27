@@ -210,16 +210,9 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    border: 2px solid blue;
     margin-left: 50px;
     margin-top: 200px;
-    /* width: 90%;
-    margin: auto;
-    margin-left: 130px;
-    margin-top: 90px;
-    display: flex;
-    justify-content: center;
-    gap: 15px; */
+
 
   }
 
@@ -231,7 +224,6 @@ a {
   }
 
   section {
-    border: 2px solid black;
     flex-wrap: wrap;
     width: 100%;
     margin: 0px;
